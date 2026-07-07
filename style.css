@@ -1,5 +1,5 @@
 /* ==========================================
-   1. RESET & BASE STYLES
+   1. RESET & BASE SOLAR STYLES
    ========================================== */
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-    background: radial-gradient(circle at top right, #1e1b4b, #0f172a 60%);
+    background: radial-gradient(circle at top right, #064e3b, #0f172a 70%); /* Deep solar green to dark slate */
     color: #f8fafc;
     line-height: 1.7;
 }
@@ -22,9 +22,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.8);
+    background-color: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -34,8 +34,8 @@ header {
 
 .logo-container {
     font-weight: 700;
-    font-size: 1.3rem;
-    color: #f1f5f9;
+    font-size: 1.4rem;
+    color: #10b981; /* Lime/Emerald accent */
     letter-spacing: -0.5px;
 }
 
@@ -44,17 +44,16 @@ nav a {
     text-decoration: none;
     margin-left: 2.5rem;
     font-weight: 500;
-    font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
 nav a:hover, nav a.active {
-    color: #38bdf8;
-    text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    color: #10b981;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
 }
 
 /* ==========================================
-   3. LAYOUT & STRUCTURE
+   3. LAYOUT & TEXT
    ========================================== */
 .page {
     min-height: 100vh;
@@ -71,10 +70,9 @@ nav a:hover, nav a.active {
     text-align: center;
 }
 
-/* Typography Accent */
 .badge {
-    background: rgba(56, 189, 248, 0.1);
-    color: #38bdf8;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
     padding: 0.35rem 1rem;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -83,14 +81,14 @@ nav a:hover, nav a.active {
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     display: inline-block;
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 h1 {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.2;
-    background: linear-gradient(to right, #ffffff, #94a3b8);
+    background: linear-gradient(to right, #ffffff, #a7f3d0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
@@ -114,32 +112,32 @@ h2 {
    ========================================== */
 .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #38bdf8, #0284c7);
-    color: #0f172a;
+    background: linear-gradient(135deg, #10b981, #047857);
+    color: #ffffff;
     padding: 0.85rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
     transition: all 0.2s ease;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.5);
+    box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5);
 }
 
 /* ==========================================
-   5. MEDIA CONTAINERS
+   5. MEDIA OBJECTS
    ========================================== */
 .poster-container {
-    max-width: 480px;
+    max-width: 600px;
     width: 100%;
     margin-top: 3.5rem;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 30px 60px -15px rgba(0,0,0,0.7);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .poster-container img {
@@ -153,7 +151,7 @@ h2 {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     background: #000;
     margin: 2.5rem 0;
 }
@@ -164,7 +162,7 @@ h2 {
 }
 
 /* ==========================================
-   6. GRID / CARDS (Features & Gallery)
+   6. GRID LAYOUT & SPEC TABLES
    ========================================== */
 .grid {
     display: grid;
@@ -176,7 +174,7 @@ h2 {
 }
 
 .card {
-    background-color: rgba(30, 41, 59, 0.5);
+    background-color: rgba(30, 41, 59, 0.4);
     padding: 3rem 2rem;
     border-radius: 16px;
     text-align: left;
@@ -185,8 +183,8 @@ h2 {
 }
 
 .card:hover {
-    border-color: #38bdf8;
-    background-color: rgba(30, 41, 59, 0.8);
+    border-color: #10b981;
+    background-color: rgba(30, 41, 59, 0.7);
     transform: translateY(-5px);
 }
 
@@ -206,10 +204,8 @@ h2 {
     color: #94a3b8;
     font-size: 0.95rem;
     text-align: left;
-    margin-bottom: 0;
 }
 
-/* Special Specs Table for Detail */
 .specs-table {
     width: 100%;
     max-width: 700px;
@@ -223,11 +219,10 @@ h2 {
 
 .specs-table td {
     padding: 1rem;
-    font-size: 1rem;
 }
 
 .specs-table td:first-child {
-    color: #38bdf8;
+    color: #10b981;
     font-weight: 600;
     width: 40%;
 }
@@ -237,7 +232,7 @@ h2 {
 }
 
 /* ==========================================
-   7. CONTACT FORM
+   7. FORM DESIGN
    ========================================== */
 form {
     width: 100%;
@@ -256,7 +251,6 @@ label {
     font-size: 0.85rem;
     color: #94a3b8;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: -0.5rem;
     text-align: left;
 }
@@ -268,14 +262,12 @@ input, textarea {
     border: 1px solid #334155;
     color: white;
     border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
 
 /* ==========================================
