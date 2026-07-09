@@ -507,3 +507,15 @@ body {
 table tr:hover {
     background: rgba(10, 36, 99, 0.04);
 }
+
+/* Fix for the longer brand name text */
+.nav-brand-text {
+    display: flex;
+    flex-direction: column; /* Stacks Smart and City Transit vertically */
+    line-height: 1.2;       /* Tightens the gap between the lines */
+}
+
+.nav-brand-text span {
+    display: block;         /* Forces the span text to its own line */
+    font-size: 0.85em;      /* Slightly shrinks 'City Transit' so it fits perfectly */
+}
